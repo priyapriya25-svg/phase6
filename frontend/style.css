@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f6fb;
+    color: #263449;
+    line-height: 1.6;
+}
+
+header {
+    background: #294f91;
+    color: white;
+    text-align: center;
+    padding: 30px 16px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    width: min(900px, 92%);
+    margin: 30px auto;
+}
+
+.form-section,
+.feedback-section {
+    background: white;
+    padding: 24px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    margin-top: 0;
+    color: #294f91;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #8bb5ff;
+    border-color: #294f91;
+}
+
+button {
+    border: none;
+    background: #294f91;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 7px;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d3b70;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.section-heading button {
+    width: auto;
+}
+
+#statusMessage {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.feedback-card {
+    border: 1px solid #dce4ef;
+    border-left: 4px solid #294f91;
+    padding: 16px;
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+.feedback-card h3 {
+    margin: 0 0 8px;
+}
+
+.feedback-card p {
+    margin: 6px 0;
+}
+
+.empty-message {
+    color: #64748b;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 94%;
+        margin: 18px auto;
+    }
+
+    .form-section,
+    .feedback-section {
+        padding: 16px;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+    }
+}
