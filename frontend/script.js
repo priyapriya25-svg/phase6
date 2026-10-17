@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/feedback";
+const API_URL = "https://phase6-odx8.onrender.com/feedback";
 
 const feedbackForm = document.querySelector("#feedbackForm");
 const studentName = document.querySelector("#studentName");

@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/feedback";
+const API_URL = "https://phase6-odx8.onrender.com/feedback";
 
 const feedbackList = document.querySelector("#feedbackList");
 const loadButton = document.querySelector("#loadFeedback");
@@ -25,6 +25,7 @@ async function fetchFeedback() {
             message.className = "empty-message";
             message.textContent = "No feedback submitted yet.";
             feedbackList.appendChild(message);
+
             return;
         }
 
